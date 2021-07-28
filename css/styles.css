@@ -38,8 +38,8 @@ button {
 }
 
 .column-half > button {
-  padding: 0.5rem 1rem;
-  margin: 0.5rem;
+  padding: 0.5rem 2rem;
+  margin: 1rem;
   color: white;
 }
 
@@ -71,4 +71,23 @@ button {
 
 li {
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .large-font {
+    font-size: 2.5rem;
+  }
+
+  .column-half > button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+  }
+
+  .rule-modal > h2 {
+    font-size: 1.5rem;
+  }
+
+  li {
+    font-size: 1rem;
+  }
 }
