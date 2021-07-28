@@ -7,18 +7,8 @@ body {
   background-size: cover;
 }
 
-.row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-img {
-  justify-content: center;
-}
-
-.blackjack {
-  font-size: large;
+.large-font {
+  font-size: 5rem;
 }
 
 .uppercase {
@@ -29,14 +19,56 @@ img {
   font-style: italic;
 }
 
+.column-half {
+  display: flex;
+}
+
 .gold {
   color: #d9a111;
 }
 
-/* .star {
+.star {
+  padding-right: 1rem;
+}
 
-} */
+button {
+  border-radius: 15%;
+  border: solid black;
+  border-width: 0.1rem;
+}
+
+.column-half > button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  color: white;
+}
+
+.red-button {
+  background-color: #c71717;
+}
+
+.blue-button {
+  background-color: #1b83ce;
+}
 
 .hidden {
   display: none;
+}
+
+.rule-modal {
+  background-color: #318fad;
+  border: 2px solid #318fad;
+  opacity: 0.6;
+}
+
+.white {
+  color: white;
+}
+
+.rule-modal > h2 {
+  font-size: 2rem;
+}
+
+li {
+  font-size: 1.5rem;
 }

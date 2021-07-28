@@ -1,0 +1,32 @@
+.home-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  justify-content: center;
+  padding: 5rem 0.5rem 0.1rem;
+}
+
+.blackjack {
+  margin: auto;
+}
+
+.rule-modal {
+  width: 80%;
+  height: 80vh;
+}
+
+.rule-modal > h2 {
+  text-align: center;
+}
+
+/* @media screen and (min-width: 768px) {
+
+} */
