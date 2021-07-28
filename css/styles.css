@@ -7,6 +7,10 @@ body {
   background-size: cover;
 }
 
+header {
+  padding-left: 1rem;
+}
+
 .large-font {
   font-size: 5rem;
 }
@@ -70,7 +74,14 @@ button {
 }
 
 li {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.rule-modal > button {
+  align-self: flex-end;
+  width: 10%;
+  margin: 0.3rem;
+  padding: 0.6rem 0.8rem;
 }
 
 @media screen and (max-width: 768px) {

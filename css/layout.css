@@ -22,6 +22,8 @@ img {
 .rule-modal {
   width: 80%;
   height: 80vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .rule-modal > h2 {
