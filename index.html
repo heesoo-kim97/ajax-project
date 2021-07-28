@@ -8,11 +8,71 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
+    <h2 class="header uppercase gold italic hidden">blackjack</h2>
   </header>
   <main>
+<!-- Home Page -->
+    <div class="home-container">
+      <div class="row">
+        <img src="https://deckofcardsapi.com/static/img/AS.png" alt="Ace of Spades">
+        <img src="https://deckofcardsapi.com/static/img/0D.png" alt="Ten of Diamonds">
+      </div>
+      <div class="row">
+        <div class="blackjack uppercase italic gold large-font">
+          <h1 class="large-font">blackjack</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-half">
+          <i class="fas fa-star gold star"></i>
+        </div>
+        <div class="column-half">
+          <button class="home-play uppercase red-button">play</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-half">
+          <i class="fas fa-star gold star"></i>
+        </div>
+        <div class="column-half">
+          <button class="rule uppercase blue-button">rule</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rules Page -->
+    <div class="rule-container hidden">
+      <div class="row">
+        <div class="rule-modal">
+          <h2 class="uppercase italic white">rule</h2>
+          <ul class="white">
+            <li>This game is played with 3 decks of 52 cards, and players can choose the amount to start with</li>
+            <li>Aces can be counted as 1 or 11 points</li>
+            <li>Cards 2-10 count according to their face value</li>
+            <li>J, Q, K count as 10 points</li>
+            <li>Player starts with two cards and play against the dealer</li>
+            <li>One of the dealer's cards will be face down</li>
+            <li>Player can "Stand" to end your turn or "Hit" to ask for another card</li>
+            <li>Dealer reveals hidden card after player's turn and if the dealer draws total of 16 or less, dealer will draw another card</li>
+            <li>If your total value exceeds 21, you "bust" and lose the game</li>
+            <li>If the dealer's value is closer to 21, you lose and vice versa</li>
+            <li>If the dealer busts, any player whho didn't bust wins</li>
+            <li>If you have 21 total you have Blackjack and automatically win unless the dealer has same cards as you called "push"</li>
+            <li>There are no split in the game</li>
+          </ul>
+          <button class="return uppercase red-button white">return</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bet Modal -->
   </main>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>

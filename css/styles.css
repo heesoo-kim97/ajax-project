@@ -1,0 +1,104 @@
+* {
+  font-family: "PT serif", sans-serif;
+}
+
+body {
+  background-image: url("https://media.istockphoto.com/photos/green-poker-background-picture-id453187915?k=6&m=453187915&s=612x612&w=0&h=kB43IY-gj4jbxw-_gxsXK11ar2kR8JJjxLX-aXTvjdQ=");
+  background-size: cover;
+}
+
+header {
+  padding-left: 1rem;
+}
+
+.large-font {
+  font-size: 5rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.column-half {
+  display: flex;
+}
+
+.gold {
+  color: #d9a111;
+}
+
+.star {
+  padding-right: 1rem;
+}
+
+button {
+  border-radius: 15%;
+  border: solid black;
+  border-width: 0.1rem;
+}
+
+.column-half > button {
+  padding: 0.5rem 2rem;
+  margin: 1rem;
+  color: white;
+}
+
+.red-button {
+  background-color: #c71717;
+}
+
+.blue-button {
+  background-color: #1b83ce;
+}
+
+.hidden {
+  display: none;
+}
+
+.rule-modal {
+  background-color: #318fad;
+  border: 2px solid #318fad;
+  opacity: 0.6;
+}
+
+.white {
+  color: white;
+}
+
+.rule-modal > h2 {
+  font-size: 2rem;
+}
+
+li {
+  font-size: 1.4rem;
+}
+
+.rule-modal > button {
+  align-self: flex-end;
+  width: 10%;
+  margin: 0.3rem;
+  padding: 0.6rem 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .large-font {
+    font-size: 2.5rem;
+  }
+
+  .column-half > button {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+  }
+
+  .rule-modal > h2 {
+    font-size: 1.5rem;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+}
