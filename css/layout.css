@@ -45,7 +45,7 @@ form {
   flex-direction: column;
 }
 
-.game-play {
+.start {
   align-self: flex-end;
   padding: 0.5rem 0.8rem;
 }
