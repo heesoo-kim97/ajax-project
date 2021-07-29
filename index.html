@@ -19,7 +19,7 @@
   </header>
   <main>
 <!-- Home Page -->
-    <div class="home-container hidden">
+    <div class="home-container">
       <div class="row">
         <img src="https://deckofcardsapi.com/static/img/AS.png" alt="Ace of Spades">
         <img src="https://deckofcardsapi.com/static/img/0D.png" alt="Ten of Diamonds">
@@ -94,14 +94,14 @@
             </select>
             <h2 class="white bold deck-number">Number of Decks: 3</h2>
             <h2 class="white bold bank-amount">Total Bank Amount: $<span class="bank-total">100</span></h2>
-            <button class="start uppercase red-button white">start</button>
+            <button class="start uppercase red-button white" onclick="return false">start</button>
           </form>
         </div>
       </div>
     </div>
 
     <!-- Game Table -->
-    <div class="game-table-container">
+    <div class="game-table-container hidden">
       <div class="row">
         <div class="column-third">
           <h1 class="dealer">Dealer</h1>

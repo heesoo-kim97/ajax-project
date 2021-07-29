@@ -1,11 +1,15 @@
-var $rule = document.querySelector('.rule');
-var $ruleContainer = document.querySelector('.rule-container');
 var $homeContainer = document.querySelector('.home-container');
 var $header = document.querySelector('.header');
+var $homePlay = document.querySelector('.home-play');
+
 var $return = document.querySelector('.return');
+var $rule = document.querySelector('.rule');
+var $ruleContainer = document.querySelector('.rule-container');
 
 var $betContainer = document.querySelector('.bet-container');
-var $homePlay = document.querySelector('.home-play');
+var $start = document.querySelector('.start');
+
+var $gameTableContainer = document.querySelector('.game-table-container');
 
 function handleRulesButton(event) {
   $ruleContainer.className = 'rule-container';
@@ -25,6 +29,14 @@ function handleHomePlayButton(event) {
   $header.className = 'header uppercase gold italic';
 }
 
+function handleStartButton(event) {
+  $betContainer.className = 'bet-container hidden';
+  // $homeContainer.className = 'home-container hidden';
+  // $header.className = 'header uppercase gold italic';
+  $gameTableContainer.className = 'game-table-container';
+}
+
 $rule.addEventListener('click', handleRulesButton);
 $return.addEventListener('click', handleReturnButton);
 $homePlay.addEventListener('click', handleHomePlayButton);
+$start.addEventListener('click', handleStartButton);
