@@ -22,12 +22,17 @@ img {
 .rule-modal {
   width: 80%;
   height: 80vh;
-  display: flex;
   flex-direction: column;
 }
 
 .rule-modal > h2 {
   text-align: center;
+}
+
+.bet-modal {
+  width: 60%;
+  height: 60vh;
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {

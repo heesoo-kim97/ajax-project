@@ -19,7 +19,7 @@
   </header>
   <main>
 <!-- Home Page -->
-    <div class="home-container hidden">
+    <div class="home-container">
       <div class="row">
         <img src="https://deckofcardsapi.com/static/img/AS.png" alt="Ace of Spades">
         <img src="https://deckofcardsapi.com/static/img/0D.png" alt="Ten of Diamonds">
@@ -50,7 +50,7 @@
     <!-- Rules Page -->
     <div class="rule-container hidden">
       <div class="row">
-        <div class="rule-modal">
+        <div class="rule-modal flex">
           <h2 class="uppercase italic white">rule</h2>
           <ul class="white">
             <li>This game is played with 3 decks of 52 cards, and players will start with $100</li>
@@ -73,28 +73,30 @@
     </div>
 
     <!-- Bet Modal -->
-    <div class="bet-modal-container">
+    <div class="bet-container hidden">
       <div class="row">
-        <form>
-          <div class="bet-heading">
-            <h1>Choose Your Bet!</h1>
-          </div>
-          <select name="bet amount">
-            <option value="select an option">select an option</option>
-            <option value="All in ">All in</option>
-            <option value="1">$1</option>
-            <option value="2">$2</option>
-            <option value="5">$5</option>
-            <option value="10">$10</option>
-            <option value="15">$15</option>
-            <option value="20">$20</option>
-            <option value="25">$25</option>
-            <option value="50">$50</option>
-          </select>
-          <h2>Number of Decks: 3</h2>
-          <h2>Total Bank Amount: $<span class="bank-total">100</span></h2>
-          <button class="game-play uppercase red-button white">play</button>
-        </form>
+        <div class="bet-modal flex">
+          <form>
+            <div class="bet-heading">
+              <h1>Choose Your Bet!</h1>
+            </div>
+            <select name="bet amount">
+              <option value="select an option">select an option</option>
+              <option value="All in ">All in</option>
+              <option value="1">$1</option>
+              <option value="2">$2</option>
+              <option value="5">$5</option>
+              <option value="10">$10</option>
+              <option value="15">$15</option>
+              <option value="20">$20</option>
+              <option value="25">$25</option>
+              <option value="50">$50</option>
+            </select>
+            <h2>Number of Decks: 3</h2>
+            <h2>Total Bank Amount: $<span class="bank-total">100</span></h2>
+            <button class="game-play uppercase red-button white">play</button>
+          </form>
+        </div>
       </div>
     </div>
   </main>
