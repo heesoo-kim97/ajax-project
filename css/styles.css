@@ -73,6 +73,10 @@ button {
   color: white;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .rule-modal > h2 {
   font-size: 2rem;
 }
@@ -90,7 +94,7 @@ li {
 
 .bet-modal {
   background-color: #318fad;
-  border: 2px solid #318fad;
+  border: 3px solid #21708a;
   opacity: 0.6;
 }
 

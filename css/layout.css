@@ -30,9 +30,11 @@ img {
 }
 
 .bet-modal {
-  width: 60%;
+  width: 50%;
   height: 60vh;
   justify-content: center;
+  margin-top: 5rem;
+  padding: 5rem;
 }
 
 @media screen and (max-width: 768px) {
