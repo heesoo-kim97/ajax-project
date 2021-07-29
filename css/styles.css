@@ -27,10 +27,6 @@ header {
   font-style: italic;
 }
 
-.column-half {
-  display: flex;
-}
-
 .gold {
   color: #d9a111;
 }
@@ -98,6 +94,12 @@ li {
   opacity: 0.6;
 }
 
+.bet-option {
+  padding: 0.5rem 4rem;
+  border-radius: 8%;
+  font-size: medium;
+}
+
 @media screen and (max-width: 768px) {
   .large-font {
     font-size: 2.5rem;
@@ -114,5 +116,10 @@ li {
 
   li {
     font-size: 1rem;
+  }
+
+  .deck-number,
+  .bank-amount {
+    font-size: 1.3rem;
   }
 }
