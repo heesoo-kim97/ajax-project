@@ -4,6 +4,9 @@ var $homeContainer = document.querySelector('.home-container');
 var $header = document.querySelector('.header');
 var $return = document.querySelector('.return');
 
+var $betContainer = document.querySelector('.bet-container');
+var $homePlay = document.querySelector('.home-play');
+
 function handleRulesButton(event) {
   $ruleContainer.className = 'rule-container';
   $homeContainer.className = 'home-container hidden';
@@ -16,5 +19,12 @@ function handleReturnButton(event) {
   $header.className = 'header uppercase gold italic hidden';
 }
 
+function handleHomePlayButton(event) {
+  $betContainer.className = 'bet-container';
+  $homeContainer.className = 'home-container hidden';
+  $header.className = 'header uppercase gold italic';
+}
+
 $rule.addEventListener('click', handleRulesButton);
 $return.addEventListener('click', handleReturnButton);
+$homePlay.addEventListener('click', handleHomePlayButton);

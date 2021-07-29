@@ -19,10 +19,13 @@ img {
   margin: auto;
 }
 
+.column-half {
+  display: flex;
+}
+
 .rule-modal {
   width: 80%;
   height: 80vh;
-  display: flex;
   flex-direction: column;
 }
 
@@ -30,9 +33,31 @@ img {
   text-align: center;
 }
 
+.bet-modal {
+  width: 50%;
+  height: 60vh;
+  justify-content: center;
+  margin-top: 5rem;
+  padding: 5rem;
+}
+
+form {
+  flex-direction: column;
+}
+
+.game-play {
+  align-self: flex-end;
+  padding: 0.5rem 0.8rem;
+}
+
 @media screen and (max-width: 768px) {
   img {
     width: 100px;
     padding: 10rem 0.5rem 0.1rem;
+  }
+
+  .bet-modal {
+    width: 85%;
+    height: 55vh;
   }
 }

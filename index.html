@@ -50,10 +50,10 @@
     <!-- Rules Page -->
     <div class="rule-container hidden">
       <div class="row">
-        <div class="rule-modal">
+        <div class="rule-modal flex">
           <h2 class="uppercase italic white">rule</h2>
           <ul class="white">
-            <li>This game is played with 3 decks of 52 cards, and players can choose the amount to start with</li>
+            <li>This game is played with 3 decks of 52 cards, and players will start with $100</li>
             <li>Aces can be counted as 1 or 11 points</li>
             <li>Cards 2-10 count according to their face value</li>
             <li>J, Q, K count as 10 points</li>
@@ -73,6 +73,32 @@
     </div>
 
     <!-- Bet Modal -->
+    <div class="bet-container hidden">
+      <div class="row">
+        <div class="bet-modal flex">
+          <form class="flex">
+            <div class="bet-heading">
+              <h1 class="white bold">Choose Your Bet!</h1>
+            </div>
+            <select name="bet amount" class="bet-option">
+              <option value="select an option">select an option</option>
+              <option value="All in ">All in</option>
+              <option value="1">$1</option>
+              <option value="2">$2</option>
+              <option value="5">$5</option>
+              <option value="10">$10</option>
+              <option value="15">$15</option>
+              <option value="20">$20</option>
+              <option value="25">$25</option>
+              <option value="50">$50</option>
+            </select>
+            <h2 class="white bold deck-number">Number of Decks: 3</h2>
+            <h2 class="white bold bank-amount">Total Bank Amount: $<span class="bank-total">100</span></h2>
+            <button class="game-play uppercase red-button white">play</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </main>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
