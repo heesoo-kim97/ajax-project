@@ -40,3 +40,7 @@ $rule.addEventListener('click', handleRulesButton);
 $return.addEventListener('click', handleReturnButton);
 $homePlay.addEventListener('click', handleHomePlayButton);
 $start.addEventListener('click', handleStartButton);
+
+// function getCardDeckData(event) {
+
+// }
