@@ -41,6 +41,15 @@ $return.addEventListener('click', handleReturnButton);
 $homePlay.addEventListener('click', handleHomePlayButton);
 $start.addEventListener('click', handleStartButton);
 
-// function getCardDeckData(event) {
+function getCardDeckData(event) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=3');
+  xhr.responseType = 'json';
+  xhr.addEventListener('load', function () {
+    // console.log(xhr.status);
+    // console.log(xhr.response);
+  });
+  xhr.send();
+}
 
-// }
+getCardDeckData();
