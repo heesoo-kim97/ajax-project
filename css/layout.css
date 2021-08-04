@@ -50,11 +50,6 @@ form {
   padding: 0.5rem 0.8rem;
 }
 
-.column-third {
-  display: flex;
-  justify-content: center;
-}
-
 @media screen and (max-width: 768px) {
   img {
     width: 100px;

@@ -19,7 +19,7 @@
   </header>
   <main>
 <!-- Home Page -->
-    <div class="home-container hidden">
+    <div class="home-container">
       <div class="row">
         <img src="https://deckofcardsapi.com/static/img/AS.png" alt="Ace of Spades">
         <img src="https://deckofcardsapi.com/static/img/0D.png" alt="Ten of Diamonds">
@@ -101,15 +101,31 @@
     </div>
 
     <!-- Game Table -->
-    <div class="game-table-container">
+    <div class="game-table-container hidden">
       <div class="row">
-        <div class="column-third">
+        <div class="card-column">
           <h1 class="dealer gold">Dealer</h1>
           <img class="card-image" src="https://deckofcardsapi.com/static/img/AS.png" alt="Ace of Spades">
-        </div>
-        <div class="column-third">
-          <h1 class="player gold">Player</h1>
           <img class="card-image" src="https://deckofcardsapi.com/static/img/0D.png" alt="Ten of Diamonds">
+        </div>
+        <div class="card-columm">
+          <h1 class="player gold">Player</h1>
+          <img class="card-image" src="https://deckofcardsapi.com/static/img/AS.png" alt="Ace of Spades">
+          <img class="card-image" src="https://deckofcardsapi.com/static/img/0D.png" alt="Ten of Diamonds">
+        </div>
+      </div>
+      <div class="row">
+        <div class="card-total">
+          <h3>total:</h3>
+        </div>
+        <div class="card-total">
+          <h3>total:</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="next-move">
+          <button class="uppercase red-button">hit</button>
+          <button class="uppercase blue-button">stand</button>
         </div>
       </div>
     </div>
