@@ -100,6 +100,18 @@ li {
   font-size: medium;
 }
 
+.hit-button {
+  border-radius: 8%;
+  padding: 0.5rem 2rem;
+  color: white;
+}
+
+.stand-button {
+  border-radius: 8%;
+  padding: 0.5rem 1.5rem;
+  color: white;
+}
+
 @media screen and (max-width: 768px) {
   .large-font {
     font-size: 2.5rem;

@@ -11,6 +11,8 @@ var $start = document.querySelector('.start');
 
 var $gameTableContainer = document.querySelector('.game-table-container');
 
+// var $cardImage = document.querySelector('.card-image');
+
 function handleRulesButton(event) {
   $ruleContainer.className = 'rule-container';
   $homeContainer.className = 'home-container hidden';
@@ -31,8 +33,6 @@ function handleHomePlayButton(event) {
 
 function handleStartButton(event) {
   $betContainer.className = 'bet-container hidden';
-  // $homeContainer.className = 'home-container hidden';
-  // $header.className = 'header uppercase gold italic';
   $gameTableContainer.className = 'game-table-container';
 }
 
@@ -46,10 +46,25 @@ function getCardDeckData(event) {
   xhr.open('GET', 'https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=3');
   xhr.responseType = 'json';
   xhr.addEventListener('load', function () {
-    // console.log(xhr.status);
-    // console.log(xhr.response);
+    data.response = xhr.response;
   });
   xhr.send();
 }
 
 getCardDeckData();
+
+function drawRandom(event) {
+  var random = new XMLHttpRequest();
+  random.open('GET', 'https://deckofcardsapi.com/api/deck/tg0ubkvlqr4q/draw/?count=2');
+  random.responseType = 'json';
+  random.addEventListener('load', function () {
+    data.response = random.response;
+  });
+  random.send();
+}
+
+drawRandom();
+
+// function cardImageHandler(event) {
+//   if ($cardImage)
+// }
