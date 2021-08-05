@@ -11,7 +11,9 @@ var $start = document.querySelector('.start');
 
 var $gameTableContainer = document.querySelector('.game-table-container');
 
-// var $cardImage = document.querySelector('.card-image');
+// var $firstCardImage = document.querySelector('#first-card-image');
+// var $secondCardImage = document.querySelector('#second-card-image');
+// var $cardTotalCount = document.querySelector('card-total');
 
 function handleRulesButton(event) {
   $ruleContainer.className = 'rule-container';
@@ -47,6 +49,7 @@ function getCardDeckData(event) {
   xhr.responseType = 'json';
   xhr.addEventListener('load', function () {
     data.response = xhr.response;
+    // console.log(xhr.response);
   });
   xhr.send();
 }
@@ -59,6 +62,8 @@ function drawRandom(event) {
   random.responseType = 'json';
   random.addEventListener('load', function () {
     data.response = random.response;
+    // console.log(random.response);
+    document.getElementById('first-card-image').src = random.response.cards[0];
   });
   random.send();
 }
