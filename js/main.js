@@ -58,12 +58,12 @@ getCardDeckData();
 
 function drawRandom(event) {
   var random = new XMLHttpRequest();
-  random.open('GET', 'https://deckofcardsapi.com/api/deck/tg0ubkvlqr4q/draw/?count=2');
+  random.open('GET', 'https://deckofcardsapi.com/api/deck/tg0ubkvlqr4q/draw/?count=4');
   random.responseType = 'json';
   random.addEventListener('load', function () {
-    data.response = random.response;
-    // console.log(random.response);
-    document.getElementById('first-card-image').src = random.response.cards[0];
+    document.getElementById('first-player-card-image').src = random.response.cards[0].image;
+    document.getElementById('first-dealer-card-image').src = random.response.cards[1].image;
+    document.getElementById('second-player-card-image').src = random.response.cards[2].image;
   });
   random.send();
 }
